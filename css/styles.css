@@ -324,3 +324,10 @@ body::after{
 :where(a,button,input,select,textarea,[tabindex]):focus-visible{outline:2px solid var(--bronze);outline-offset:4px}
 input::placeholder,textarea::placeholder{color:#b8b1a7;opacity:1}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.skip-link{transition:none}.hero-video{visibility:hidden}}
+
+
+/* v0.7.11 — mobile Hero spacing refinement */
+@media (max-width:520px) {
+  /* Lift the Hero text block to keep the CTA clear of the video frame. */
+  .hero-content { transform: translateY(-50px); }
+}
